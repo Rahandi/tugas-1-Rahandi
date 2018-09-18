@@ -124,7 +124,7 @@
                     gl.bindBuffer(gl.ARRAY_BUFFER, objekcolor[a])
                     color.push([])
                     for (var b=0;b<objek[a].numItems;b++) {
-                        color[a] = color[a].concat([1.0, 1.0, 1.0, 1.0])
+                        color[a] = color[a].concat([Math.random(), Math.random(), Math.random(), 1.0])
                     }
                     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(color[a]), gl.STATIC_DRAW)
                     objekcolor[a].itemSize = 4
